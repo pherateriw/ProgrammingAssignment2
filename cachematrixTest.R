@@ -22,7 +22,7 @@ generateTest <- function(dimensions = 3, max_value = 100, retry = 0){
 A3x3 = matrix(c(3,0,2,2,0,-2,0,1,1), nrow = 3, ncol = 3)
 A4x4 = matrix(c(1,0,0,1,0,2,1,2,2,1,0,1,2,0,1,4), nrow = 4, ncol = 4)
 
-#perform matrix muultiplication, round to precision, 
+#perform matrix multiplication, round to precision, 
 #and check that the result is the identity matrix
 assertIsInverse <- function(m,i,prec = 0){
     ident <- m %*% i
